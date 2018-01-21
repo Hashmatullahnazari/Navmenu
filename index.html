@@ -1,3 +1,6 @@
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,37 +13,40 @@
 </head>
 
 <body>
-<header>
 
-<video autoplay loop class="video-background" muted plays-inline>
-<source src="video1.mp4" type="video/mp4">
-    </video>
-    
-    
-    
-    <div class="nav">
-        <img src="logo.png" class="logo">
-        
-        <ul class="menu">
+  
+ <nav>
+      <h1 class="brand"><a href="">Online Tutorial</a></h1>
+       <ul>
            <li><a href="">Home</a></li>
-           <li><a href="">Services </a></li>
-           <li><a href="">Gallery</a></li>
-           <li><a href="">Review</a></li>
-           <li><a href="">Contact</a></li>            
-            
-            
-            
-            
-        </ul>
-    </div>
+           <li><a href="">About</a></li>
+           <li><a href="">Profile</a></li>
+           <li><a href="">Menu</a></li>
+           <li><a href="">Portfolio</a></li>
+       </ul>
+  <div style="clear:both"></div>
+  </nav>
+   <div class="responsive-bar">
+     <h3 class="brand"><a href="#">online tutorial</a></h3>
+     <h4 class="menu">Menu</h4>
+     <div style="clear:both"></div>
+   </div>
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript">
     
-    <div class="msg">
-        <h1>The Creative World</h1>
-        <a href="" class="btn btn1">Contact</a>
-        <a href="" class="btn btn2">Explore</a>
-    </div>
-    
-    </header>
+    $(document).ready(function(){
+    $(".menu").click(function(){
+        $("nav").slideToggle(300);
+    });
+});
+  
+  </script>
 </body>
 
+
 </html>
+
+
+
+
